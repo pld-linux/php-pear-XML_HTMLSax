@@ -1,17 +1,17 @@
 %include	/usr/lib/rpm/macros.php
 %define         _class          XML
 %define         _subclass       HTMLSax
-%define		_status		stable
+%define		_status		alpha
 %define		_pearname	%{_class}_%{_subclass}
 Summary:	%{_pearname} - A SAX based parser for HTML and other badly formed XML documents
 Summary(pl):	%{_pearname} - analizator SAX dla HTML i innych ¼le sformu³owanych dokumentów XML
 Name:		php-pear-%{_pearname}
-Version:	1.1
+Version:	2.0.1
 Release:	1
 License:	PHP
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	2642ff95326f0257f20b5be4ce9285ba
+# Source0-md5:	dc252af6a382fbe7781c224c0e7223c3
 URL:		http://pear.php.net/
 BuildRequires:	rpm-php-pearprov >= 4.0.2-98
 Requires:	php-pear
@@ -56,7 +56,7 @@ Ta klasa ma w PEAR status: %{_status}.
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/{,%{_subclass}}
+install -d $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/%{_subclass}
 
 install %{_pearname}-%{version}/*.php $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}
 install %{_pearname}-%{version}/%{_subclass}/*.php $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/%{_subclass}
