@@ -4,8 +4,8 @@
 %define		_status		stable
 %define		_pearname	%{_class}_%{_subclass}
 
-Summary:	%{_pearname} - A SAX based parser for HTML and other badly formed XML documents
-Summary(pl):	%{_pearname} - analizator SAX dla HTML i innych ¼le sformu³owanych dokumentów XML
+Summary:	%{_pearname} - a SAX based parser for HTML and other badly formed XML documents
+Summary(pl):	%{_pearname} - analizator SAX dla HTML-a i innych ¼le sformu³owanych dokumentów XML
 Name:		php-pear-%{_pearname}
 Version:	2.1.2
 Release:	1
@@ -36,7 +36,7 @@ the ability to handle processing instructions and JSP/ASP markup.
 This class has in PEAR status: %{_status}.
 
 %description -l pl
-XML_HTMLSax to oparty na SAX analizator XML do ¼le sformu³owanych
+XML_HTMLSax to oparty na SAX analizator XML-a dla ¼le sformu³owanych
 dokumentów XML, takich jak HTML. Oryginalny kod zosta³ stworzony przez
 Alexandra Zhukova i opublikowany pod
 http://sourceforge.net/projects/phpshelve/, który z kolei by³
