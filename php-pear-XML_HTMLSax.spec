@@ -33,7 +33,7 @@ http://phpxmlclasses.sourceforge.net/show_doc.php?class=class_sax_filters.html.
 This version also fixes some bugs and adds further features such as
 the ability to handle processing instructions and JSP/ASP markup.
 
-This class has in PEAR status: %{_status}.
+In PEAR status of this package is: %{_status}.
 
 %description -l pl
 XML_HTMLSax to oparty na SAX analizator XML-a dla ¼le sformu³owanych
