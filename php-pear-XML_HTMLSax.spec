@@ -7,12 +7,12 @@
 Summary:	%{_pearname} - a SAX based parser for HTML and other badly formed XML documents
 Summary(pl):	%{_pearname} - analizator SAX dla HTML-a i innych ¼le sformu³owanych dokumentów XML
 Name:		php-pear-%{_pearname}
-Version:	2.1.2
+Version:	3.0.0
 Release:	1
 License:	PHP
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	f2cd9ea8ed1c59cc3046675d41c7cf98
+# Source0-md5:	73b75ef6d68c74115b6da8d151293633
 URL:		http://pear.php.net/package/XML_HTMLSax/
 BuildRequires:	rpm-php-pearprov >= 4.0.2-98
 Requires:	php-pear
@@ -67,7 +67,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc %{_pearname}-%{version}/docs
+%doc %{_pearname}-%{version}/{docs,tests}
 %dir %{php_pear_dir}/%{_class}/%{_subclass}
 %{php_pear_dir}/%{_class}/*.php
 %{php_pear_dir}/%{_class}/%{_subclass}/*.php
