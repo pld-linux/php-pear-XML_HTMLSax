@@ -1,11 +1,10 @@
-# ToDo:
-# - pl summary/description
 %include	/usr/lib/rpm/macros.php
 %define         _class          XML
 %define         _subclass       HTMLSax
 %define		_status		stable
 %define		_pearname	%{_class}_%{_subclass}
 Summary:	%{_pearname} - A SAX based parser for HTML and other badly formed XML documents
+Summary(pl):	%{_pearname} - analizator SAX dla HTML i innych ¼le sformu³owanych dokumentów XML
 Name:		php-pear-%{_pearname}
 Version:	1.0
 Release:	1
@@ -34,6 +33,23 @@ This version also fixes some bugs and adds further features such as
 the ability to handle processing instructions and JSP/ASP markup.
 
 This class has in PEAR status: %{_status}.
+
+%description -l pl
+XML_HTMLSax to oparty na SAX analizator XML do ¼le sformu³owanych
+dokumentów XML, takich jak HTML. Oryginalny kod zosta³ stworzony przez
+Alexandra Zhukova i opublikowany pod
+http://sourceforge.net/projects/phpshelve/, który z kolei by³
+inspirowany pakietem HTMLSax dla Pythona. Alexander pozwoli³ na
+modyfikowanie kodu i licencjonowanie do w³±czenia do PEAR.
+PEAR::XML_HTMLSax wywodzi siê z ostatniej wersji z Sourceforge
+(HTMLSax2002082201) i ma zmienione API, aby mo¿na by³o u¿ywaæ HTMLSax
+bardzo podobnie do natywnego rozszerzenia PHP Expat, pozwalaj±c na
+u¿ywanie w projektach typu filtry SAX:
+http://phpxmlclasses.sourceforge.net/show_doc.php?class=class_sax_filters.html.
+Ta wersja dodatkowo poprawia kilka b³êdów i dodaje nowe mo¿liwo¶ci,
+takie jak obs³uga przetwarzania instrukcji i znaczników JSP/ASP.
+
+Ta klasa ma w PEAR status: %{_status}.
 
 %prep
 %setup -q -c
