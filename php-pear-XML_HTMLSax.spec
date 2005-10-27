@@ -9,6 +9,7 @@ Summary(pl):	%{_pearname} - analizator SAX dla HTML-a i innych ¼le sformu³owanyc
 Name:		php-pear-%{_pearname}
 Version:	3.0.0
 Release:	3
+Epoch:		0
 License:	PHP
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
