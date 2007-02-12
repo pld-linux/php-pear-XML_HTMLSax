@@ -5,7 +5,7 @@
 %define		_pearname	%{_class}_%{_subclass}
 
 Summary:	%{_pearname} - a SAX based parser for HTML and other badly formed XML documents
-Summary(pl):	%{_pearname} - analizator SAX dla HTML-a i innych ºle sformu≥owanych dokumentÛw XML
+Summary(pl.UTF-8):   %{_pearname} - analizator SAX dla HTML-a i innych ≈∫le sformu≈Çowanych dokument√≥w XML
 Name:		php-pear-%{_pearname}
 Version:	3.0.0
 Release:	4
@@ -39,26 +39,26 @@ the ability to handle processing instructions and JSP/ASP markup.
 
 In PEAR status of this package is: %{_status}.
 
-%description -l pl
-XML_HTMLSax to oparty na SAX analizator XML-a dla ºle sformu≥owanych
-dokumentÛw XML, takich jak HTML. Oryginalny kod zosta≥ stworzony przez
+%description -l pl.UTF-8
+XML_HTMLSax to oparty na SAX analizator XML-a dla ≈∫le sformu≈Çowanych
+dokument√≥w XML, takich jak HTML. Oryginalny kod zosta≈Ç stworzony przez
 Alexandra Zhukova i opublikowany pod
-http://sourceforge.net/projects/phpshelve/, ktÛry z kolei by≥
-inspirowany pakietem HTMLSax dla Pythona. Alexander pozwoli≥ na
-modyfikowanie kodu i licencjonowanie do w≥±czenia do PEAR.
-PEAR::XML_HTMLSax wywodzi siÍ z ostatniej wersji z Sourceforge
-(HTMLSax2002082201) i ma zmienione API, aby moøna by≥o uøywaÊ HTMLSax
-bardzo podobnie do natywnego rozszerzenia PHP Expat, pozwalaj±c na
-uøywanie w projektach typu filtry SAX:
+http://sourceforge.net/projects/phpshelve/, kt√≥ry z kolei by≈Ç
+inspirowany pakietem HTMLSax dla Pythona. Alexander pozwoli≈Ç na
+modyfikowanie kodu i licencjonowanie do w≈ÇƒÖczenia do PEAR.
+PEAR::XML_HTMLSax wywodzi siƒô z ostatniej wersji z Sourceforge
+(HTMLSax2002082201) i ma zmienione API, aby mo≈ºna by≈Ço u≈ºywaƒá HTMLSax
+bardzo podobnie do natywnego rozszerzenia PHP Expat, pozwalajƒÖc na
+u≈ºywanie w projektach typu filtry SAX:
 http://phpxmlclasses.sourceforge.net/show_doc.php?class=class_sax_filters.html.
-Ta wersja dodatkowo poprawia kilka b≥ÍdÛw i dodaje nowe moøliwo∂ci,
-takie jak obs≥uga przetwarzania instrukcji i znacznikÛw JSP/ASP.
+Ta wersja dodatkowo poprawia kilka b≈Çƒôd√≥w i dodaje nowe mo≈ºliwo≈õci,
+takie jak obs≈Çuga przetwarzania instrukcji i znacznik√≥w JSP/ASP.
 
 Ta klasa ma w PEAR status: %{_status}.
 
 %package tests
 Summary:	Tests for PEAR::%{_pearname}
-Summary(pl):	Testy dla PEAR::%{_pearname}
+Summary(pl.UTF-8):   Testy dla PEAR::%{_pearname}
 Group:		Development/Languages/PHP
 Requires:	%{name} = %{epoch}:%{version}-%{release}
 AutoReq:	no
@@ -67,7 +67,7 @@ AutoProv:	no
 %description tests
 Tests for PEAR::%{_pearname}.
 
-%description tests -l pl
+%description tests -l pl.UTF-8
 Testy dla PEAR::%{_pearname}.
 
 %prep
